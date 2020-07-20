@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Hide Recent News - DuckDuckGo",
+  "description": "Hides 'Recent News' in search results of DuckDuckGo.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://duckduckgo.com/*"],
+      "js": ["js/contentScript.js"]
+    }
+  ]
+}
